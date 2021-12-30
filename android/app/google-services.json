@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "338376717641",
+    "project_id": "contactsonlineapp",
+    "storage_bucket": "contactsonlineapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338376717641:android:c93656d058e3b632a1d698",
+        "android_client_info": {
+          "package_name": "com.example.mycontactonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338376717641-n182av9dtn4kgns1uq02r5tk8ut58cv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1LfkHSHs4p2B12WIBVIUXaqeJ3Atbj8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338376717641-n182av9dtn4kgns1uq02r5tk8ut58cv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
