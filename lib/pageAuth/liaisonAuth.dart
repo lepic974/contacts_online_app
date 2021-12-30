@@ -22,7 +22,5 @@ class _LiaisonAuthState extends State<LiaisonAuth> {
       return Connexion(basculation: basculation);
     } else {
       return Inscription(basculation: basculation);
-    }
-    return Container();
-  }
+    }}
 }

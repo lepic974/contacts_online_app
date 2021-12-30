@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:mycontactonline/constants/chargement.dart';
 
 class Connexion extends StatefulWidget {
@@ -11,6 +12,9 @@ class Connexion extends StatefulWidget {
 }
 
 class _ConnexionState extends State<Connexion> {
+
+  FirebaseAuth _auth = FirebaseAuth.instance;
+
   String email ='';
   String motDePasse ='';
 
@@ -20,6 +24,7 @@ class _ConnexionState extends State<Connexion> {
 
   @override
   Widget build(BuildContext context) {
+
     return chargement ? Chargement() : Scaffold(
       body: SingleChildScrollView(
         child: Container(
@@ -64,7 +69,9 @@ class _ConnexionState extends State<Connexion> {
                     if(_keyForm.currentState.validate()) {
 
                       setState(() => chargement = true);
-
+                      AuthResult result = await _auth.signInWithEmailAndPassword(email: email, password: motDePasse);
+                      if(result == null) {
+                      }
                     }
                   },
                   style: ElevatedButton.styleFrom(
